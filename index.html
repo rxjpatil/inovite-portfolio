@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inovite Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/inovite-favicon.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+  <div class="sidebar-info">
+
+    <figure class="avatar-box">
+      <model-viewer 
+        src="./assets/images/inovite-favicon.glb" 
+        alt="Inovite Logo"
+        auto-rotate
+        disable-zoom
+        camera-controls
+        shadow-intensity="1"
+        exposure="1"
+        style="width:80px; height:80px; background:transparent; border-radius:50%;">
+      </model-viewer>
+    </figure>
+
+    <div class="info-content">
+      <h1 class="name" title="Inovite">Inovite</h1>
+      <p class="title">Nexconnect@inovite.in</p>
+    </div>
+
+    <button class="info_more-btn" data-sidebar-btn>
+      <span>Show Contacts</span>
+      <ion-icon name="chevron-down"></ion-icon>
+    </button>
+
+  </div>
+
+
+<!-- Add once in <head> or before </body> -->
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:connect@inovite.in" class="contact-link">connect@inovite.in</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+917447706777" class="contact-link">+91 744 7706777</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>
+                <a href="https://www.google.com/maps/place/Pune,+India" class="contact-link" rel="noopener noreferrer">
+                Pune, India
+                </a>
+              </address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <i class="fas fa-download"></i>
+            </div>
+
+<!--             <div class="contact-info">
+              <a class="contact-link" href="https://docs.google.com/document/d/1jdiziSE07FQLm12BgHmlsXih6ASB-Ty96By5gPknj00/edit?usp=sharing" download target="_blank" >Download Resume</a>
+              
+            </div> -->
+            <div class="contact-info">
+                <a class="contact-link" href="https://docs.google.com/document/d/1jdiziSE07FQLm12BgHmlsXih6ASB-Ty96By5gPknj00/export?format=pdf" download="Raj_Patil_Resume.pdf" target="_blank">Download Brochure</a>
+            </div>
+
+
+          </li>
+
+
+
+        </ul>
+
+        <div class="separator"></div>
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://x.com/rxjpatil" target="_blank" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/rxjpatil" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@wtfrxj?sub_confirmation=1" target="_blank" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/rxjpatil" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/rxjpatil" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About us</h2>
+        </header>
+
+       <section class="about-text">
+  <p>
+Founded in Pune and shaped by expertise from Akola, <strong>Inovite Services Pvt. Ltd.</strong> was created by innovators with a shared vision, to turn challenges into elegant, future-ready solutions.
+  </p>
+
+  <p>
+At Inovite, we craft <strong>functional, user-friendly, and refined digital products</strong>. Blending technical precision with creativity, we deliver solutions that are impactful, intuitive, and built to last. From startups to enterprises, we partner with brands that aspire to dream bigger.  
+  </p>
+</section>
+
+
+
+        <!--
+          - service
+        -->
+
+       <section class="service">
+
+  <h3 class="h3 service-title">What We Do</h3>
+
+  <ul class="service-list">
+
+    <!-- Development -->
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/src-opened.svg" alt="Development icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Development</h4>
+        <p class="service-item-text">
+          End-to-end development of web, mobile, desktop, and API solutions — functional, scalable, and user-friendly.
+        </p>
+      </div>
+    </li>
+
+    <!-- Data & AI -->
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/python-opened.svg" alt="Data and AI icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Data & AI</h4>
+        <p class="service-item-text">
+          Turning data into insights with analytics, automation, and AI/ML models that power smarter decisions.
+        </p>
+      </div>
+    </li>
+
+    <!-- Design -->
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/mysql-opened.svg" alt="Design icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Design</h4>
+        <p class="service-item-text">
+          Sleek, intuitive UI/UX and graphic design — blending creativity with usability to elevate brand identity.
+        </p>
+      </div>
+    </li>
+
+    <!-- Growth & Operations -->
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/aws-opened.svg" alt="Operations icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Growth & Operations</h4>
+        <p class="service-item-text">
+          DevOps, SEO, and digital strategies that ensure smooth scaling, visibility, and long-term reliability.
+        </p>
+      </div>
+    </li>
+
+  </ul>
+
+</section>
+
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+  <h3 class="h3 testimonials-title">Client Testimonials</h3>
+
+  <ul class="testimonials-list has-scrollbar">
+
+    <li class="testimonials-item">
+      <div class="content-card" data-testimonials-item>
+
+        <figure class="testimonials-avatar-box">
+          <img src="./assets/images/manisha.png" alt="Manisha Dongare" width="60" data-testimonials-avatar>
+        </figure>
+
+        <h4 class="h4 testimonials-item-title" data-testimonials-title>Manisha Dongare</h4>
+
+        <div class="testimonials-text" data-testimonials-text>
+          <p>
+            Inovite developed an excellent e-learning platform for my business. Their expertise and dedication ensured a user-friendly solution that exceeded expectations. Truly professional and highly recommended.
+          </p>
+        </div>
+
+      </div>
+    </li>
+
+    <li class="testimonials-item">
+      <div class="content-card" data-testimonials-item>
+
+        <figure class="testimonials-avatar-box">
+          <img src="./assets/images/anjun.png" alt="Anjun Malusare" width="60" data-testimonials-avatar>
+        </figure>
+
+        <h4 class="h4 testimonials-item-title" data-testimonials-title>Yash Singh</h4>
+
+        <div class="testimonials-text" data-testimonials-text>
+          <p>
+            Partnering with Inovite has been an impressive experience. Their team quickly understood our requirements and delivered robust full-stack solutions. The proactive approach and technical depth make them a trusted technology partner.
+          </p>
+        </div>
+
+      </div>
+    </li>
+
+    <li class="testimonials-item">
+      <div class="content-card" data-testimonials-item>
+
+        <figure class="testimonials-avatar-box">
+          <img src="./assets/images/sumeet.png" alt="Sumeet Solanki" width="60" data-testimonials-avatar>
+        </figure>
+
+        <h4 class="h4 testimonials-item-title" data-testimonials-title>Sumeet Solanki</h4>
+
+        <div class="testimonials-text" data-testimonials-text>
+          <p>
+            The Inovite team played a key role in our TetraPack project, especially in frontend and Django development. Their contribution was instrumental in delivering robust, on-time solutions. Reliable, skilled, and collaborative.
+          </p>
+        </div>
+
+      </div>
+    </li>
+
+    <li class="testimonials-item">
+      <div class="content-card" data-testimonials-item>
+
+        <figure class="testimonials-avatar-box">
+          <img src="./assets/images/abhi.png" alt="Abhishek Phapale" width="60" data-testimonials-avatar>
+        </figure>
+
+        <h4 class="h4 testimonials-item-title" data-testimonials-title>Abhishek Phapale</h4>
+
+        <div class="testimonials-text" data-testimonials-text>
+          <p>
+            Working with Inovite has been a rewarding collaboration. Their team brings creativity, technical expertise, and a strong problem-solving mindset that consistently drives projects forward with excellence.
+          </p>
+        </div>
+
+      </div>
+    </li>
+
+  </ul>
+
+</section>
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2024</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Work With</h3>
+
+          <ul class="clients-list has-scrollbar">
+            <li class="clients-item">
+              <img src="./img/1.jpg" alt="Inovite Service Pvt. Ltd.">
+            </li>
+            <!-- <li class="clients-item">
+              <img src="./img/2.jpg" alt="ViziSmart">
+            </li>
+            <li class="clients-item">
+              <img src="./img/3.jpg" alt="64 SQR APEX LLP">
+            </li>
+            <li class="clients-item">
+              <img src="./img/4.jpg" alt="InnoSquares">
+           </li> -->
+            <li class="clients-item">
+              <img src="./img/5.jpg" alt="Smart Solutions">
+            </li>
+            <li class="clients-item">
+                <img src="./img/6.jpg" alt="Esti Source">
+            </li>
+            <li class="clients-item">
+                <img src="./img/7.jpg" alt="Vision Academy">
+            </li>
+            <li class="clients-item">
+                <img src="./img/8.jpg" alt="Insurance Tech Hub">
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+     
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://visionacademy.pythonanywhere.com/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/healthcare.jpg" style=" height:200px;" alt="AI Campaign Dashboard" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AI Campaign Dashboard</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://temp-1-eta.vercel.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/vision.jpg" style=" height:200px;" alt="vision" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Minimalist Business</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://temp-2-ruby.vercel.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://portfolio-six-wheat-52.vercel.app/images/projects/creative-agency/1.png" alt="Creative Agency" style=" height:200px;"  loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Creative Agency</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" style=" height:200px;" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" style=" height:200px;" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" style=" height:200px;" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" style=" height:200px;" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" style=" height:200px;" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+
+<!-- CONTACT SECTION -->
+<article class="contact" data-page="contact">
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
+
+  <section class="mapbox" data-mapbox>
+    <figure>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.17005851687!2d73.6981553041223!3d18.52454504095413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1720467281599!5m2!1sen!2sin"
+        width="400" height="300" loading="lazy"></iframe>
+    </figure>
+  </section>
+
+  <section class="contact-form">
+    <h3 class="h3 form-title">Contact Form</h3>
+    <form action="#" class="form" data-form id="contactForm">
+
+      <div class="input-wrapper">
+        <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+        <input type="text" name="phone" class="form-input" placeholder="Phone number" required data-form-input>
+        <input type="text" name="branch" class="form-input" placeholder="Academy Branch" required data-form-input>
+      </div>
+
+      <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+      <button class="form-btn" type="button" onclick="sendWhatsAppMessage()">
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+      </button>
+      
+    </form>
+  </section>
+</article>
+
+<!-- Custom JavaScript to send WhatsApp Message -->
+<script>
+  function sendWhatsAppMessage() {
+    const form = document.getElementById('contactForm');
+    const fullname = form.fullname.value;
+    const phone = form.phone.value;
+    const branch = form.branch.value;
+    const message = form.message.value;
+
+    const whatsappNumber = "919511892983"; // Your WhatsApp number (country code included)
+
+    const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Hello,%20this%20is%20a%20message%20from%20${fullname}%20(contact:%20${phone},%20branch:%20${branch}).%20Message:%20${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, '_blank');
+  }
+</script>
+
+<!-- ionicon and custom js links -->
+<script src="./assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+    
+
+</body>
+
+</html>
